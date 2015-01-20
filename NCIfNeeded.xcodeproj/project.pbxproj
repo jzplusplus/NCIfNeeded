@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3B977E691A6DD92700BB919D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B977E681A6DD92700BB919D /* Foundation.framework */; };
 		3B977E741A6DD92700BB919D /* NCIfNeeded.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3B977E731A6DD92700BB919D /* NCIfNeeded.mm */; };
+		3B977E7F1A6DD95100BB919D /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B977E7E1A6DD95100BB919D /* libsubstrate.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,9 +19,10 @@
 		3B977E6E1A6DD92700BB919D /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
 		3B977E701A6DD92700BB919D /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
 		3B977E711A6DD92700BB919D /* NCIfNeeded-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NCIfNeeded-Prefix.pch"; sourceTree = "<group>"; };
-		3B977E721A6DD92700BB919D /* NCIfNeeded.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = NCIfNeeded.xm; sourceTree = "<group>"; };
+		3B977E721A6DD92700BB919D /* NCIfNeeded.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp.preprocessed; path = NCIfNeeded.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		3B977E731A6DD92700BB919D /* NCIfNeeded.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = NCIfNeeded.mm; sourceTree = "<group>"; };
 		3B977E781A6DD92700BB919D /* NCIfNeeded.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = NCIfNeeded.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/NCIfNeeded.plist; sourceTree = "<group>"; };
+		3B977E7E1A6DD95100BB919D /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B977E7F1A6DD95100BB919D /* libsubstrate.dylib in Frameworks */,
 				3B977E691A6DD92700BB919D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,6 +58,7 @@
 		3B977E671A6DD92700BB919D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3B977E7E1A6DD95100BB919D /* libsubstrate.dylib */,
 				3B977E681A6DD92700BB919D /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -287,6 +291,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NCIfNeeded/NCIfNeeded-Prefix.pch";
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
@@ -307,6 +315,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NCIfNeeded/NCIfNeeded-Prefix.pch";
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
