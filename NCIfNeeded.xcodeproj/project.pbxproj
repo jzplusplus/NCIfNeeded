@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B22B8751E3EDF3000B149F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B22B8741E3EDF3000B149F0 /* UIKit.framework */; };
 		3B977E691A6DD92700BB919D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B977E681A6DD92700BB919D /* Foundation.framework */; };
 		3B977E741A6DD92700BB919D /* NCIfNeeded.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3B977E731A6DD92700BB919D /* NCIfNeeded.mm */; };
 		3B977E7F1A6DD95100BB919D /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B977E7E1A6DD95100BB919D /* libsubstrate.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B22B8741E3EDF3000B149F0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3B977E651A6DD92700BB919D /* NCIfNeeded.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = NCIfNeeded.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B977E681A6DD92700BB919D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		3B977E6D1A6DD92700BB919D /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
 		3B977E6E1A6DD92700BB919D /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
 		3B977E701A6DD92700BB919D /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
 		3B977E711A6DD92700BB919D /* NCIfNeeded-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NCIfNeeded-Prefix.pch"; sourceTree = "<group>"; };
@@ -30,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B22B8751E3EDF3000B149F0 /* UIKit.framework in Frameworks */,
 				3B977E7F1A6DD95100BB919D /* libsubstrate.dylib in Frameworks */,
 				3B977E691A6DD92700BB919D /* Foundation.framework in Frameworks */,
 			);
@@ -58,6 +60,7 @@
 		3B977E671A6DD92700BB919D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3B22B8741E3EDF3000B149F0 /* UIKit.framework */,
 				3B977E7E1A6DD95100BB919D /* libsubstrate.dylib */,
 				3B977E681A6DD92700BB919D /* Foundation.framework */,
 			);
@@ -87,7 +90,6 @@
 		3B977E6C1A6DD92700BB919D /* DEBIAN */ = {
 			isa = PBXGroup;
 			children = (
-				3B977E6D1A6DD92700BB919D /* control.txt */,
 				3B977E6E1A6DD92700BB919D /* control */,
 			);
 			name = DEBIAN;
@@ -286,8 +288,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 2;
+				DYLIB_CURRENT_VERSION = 2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NCIfNeeded/NCIfNeeded-Prefix.pch";
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
@@ -310,8 +312,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 2;
+				DYLIB_CURRENT_VERSION = 2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NCIfNeeded/NCIfNeeded-Prefix.pch";
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
@@ -349,6 +351,7 @@
 				3B977E7D1A6DD92700BB919D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
