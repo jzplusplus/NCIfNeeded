@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CE0AF4D5-B52E-4AB4-99D4-14BAD6548287</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NCIfNeeded</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B02F63C10FE99DEBE4CC8AF5A17E33DE0009774E</key>
+		<string>https://github.com/jzplusplus/NCIfNeeded.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>NCIfNeeded.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B02F63C10FE99DEBE4CC8AF5A17E33DE0009774E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jzplusplus/NCIfNeeded.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B02F63C10FE99DEBE4CC8AF5A17E33DE0009774E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B02F63C10FE99DEBE4CC8AF5A17E33DE0009774E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>NCIfNeeded</string>
+		</dict>
+	</array>
+</dict>
+</plist>

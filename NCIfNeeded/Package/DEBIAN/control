@@ -1,6 +1,6 @@
 Package: jzplusplus.NCIfNeeded
 Name: NCIfNeeded
-Version: 2.0-1
+Version: 3.0-2
 Description: When opening the Notification Center, this tweak will make it open straight to the Notifications view if there are any pending notifications, and straight to the Today view if not.
 Section: System
 Depends: firmware (>= 8.0), mobilesubstrate

@@ -1,0 +1,9 @@
+Package: com.yourcompany.ncifneeded-sim
+Name: ncifneeded-sim
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: x86_64
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Jay Zuerndorfer
+Author: Jay Zuerndorfer
+Section: Tweaks
